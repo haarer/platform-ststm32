@@ -1,7 +1,7 @@
 {
   "name": "ststm32",
   "title": "ST STM32",
-  "description": "The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor is designed to offer new degrees of freedom to MCU users. It offers a 32-bit product range that combines very high performance, real-time capabilities, digital signal processing, and low-power, low-voltage operation, while maintaining full integration and ease of development.",
+  "description": "The STM32 family of 32-bit Flash MCUs based on the ARM Cortex-M processor .Fork of ststm32 platform, featuring latest toolchain builds. https://github.com/haarer/toolchain68k",
   "url": "http://www.st.com/web/en/catalog/mmc/FM141/SC1169?sc=stm32",
   "homepage": "http://platformio.org/platforms/ststm32",
   "license": "Apache-2.0",
@@ -10,12 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-ststm32.git"
+    "url": "https://github.com/haarer/platform-ststm32.git"
   },
   "version": "6.0.0",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-    "http://dl.platformio.org/packages/manifest.json"
+    "http://dl.platformio.org/packages/manifest.json",
+    "https://github.com/haarer/toolchain68k/releases/download/gcc920/manifest.json"
+  
   ],
   "frameworks": {
     "mbed": {
@@ -48,9 +50,9 @@
     }
   },
   "packages": {
-    "toolchain-gccarmnoneeabi": {
+    "toolchain-arm-none-eabi-current": {
       "type": "toolchain",
-      "version": ">=1.60301.0,<1.80000.0"
+      "version": ">=8.2.0"
     },
     "framework-mbed": {
       "type": "framework",
