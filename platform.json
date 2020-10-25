@@ -6,19 +6,13 @@
   "homepage": "http://platformio.org/platforms/ststm32",
   "license": "Apache-2.0",
   "engines": {
-    "platformio": "<5"
+    "platformio": "^5"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/haarer/platform-ststm32.git"
   },
   "version": "6.0.0",
-  "packageRepositories": [
-    "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-    "http://dl.platformio.org/packages/manifest.json",
-    "https://github.com/haarer/toolchain68k/releases/download/gcc920/manifest.json"
-  
-  ],
   "frameworks": {
     "mbed": {
       "package": "framework-mbed",
@@ -52,7 +46,8 @@
   "packages": {
     "toolchain-arm-none-eabi-current": {
       "type": "toolchain",
-      "version": ">=8.2.0"
+      "owner": "haarer",
+      "version": ">=10.2.0"
     },
     "framework-mbed": {
       "type": "framework",
